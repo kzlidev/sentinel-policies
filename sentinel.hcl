@@ -10,6 +10,10 @@ module "tfconfig-functions" {
   source = "./common-functions/tfconfig-functions/tfconfig-functions.sentinel"
 }
 
+module "aws-functions" {
+  source = "./aws-functions/aws-functions.sentinel"
+}
+
 policy "s3_enforce_encryption" {
   source            = "./rules/s3/s3-enforce-encryption.sentinel"
   enforcement_level = "soft-mandatory"
