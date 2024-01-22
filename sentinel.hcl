@@ -15,7 +15,7 @@ policy "s3_enforce_encryption" {
   enforcement_level = "soft-mandatory"
 }
 
-policy "s3_enable_versioning" {
-  source            = "./rules/s3/s3-enable-versioning.sentinel"
+policy "s3_mandatory_tags" {
+  source            = "./rules/s3/s3-mandatory_tags.sentinel"
   enforcement_level = "soft-mandatory"
 }
