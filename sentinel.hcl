@@ -11,6 +11,11 @@ module "tfconfig-functions" {
 }
 
 policy "s3_enforce_encryption" {
-  source            = "./s3-enforce-encryption.sentinel"
+  source            = "./rules/s3/s3-enforce-encryption.sentinel"
+  enforcement_level = "soft-mandatory"
+}
+
+policy "s3_enable_versioning" {
+  source            = "./rules/s3/s3-enable-versioning.sentinel"
   enforcement_level = "soft-mandatory"
 }
