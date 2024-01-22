@@ -16,6 +16,6 @@ policy "s3_enforce_encryption" {
 }
 
 policy "s3_mandatory_tags" {
-  source            = "./rules/s3/s3-mandatory_tags.sentinel"
+  source            = "./rules/s3/s3-mandatory-tags.sentinel"
   enforcement_level = "soft-mandatory"
 }
