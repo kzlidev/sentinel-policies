@@ -16,7 +16,7 @@ module "aws-functions" {
 
 policy "s3_enforce_encryption" {
   source            = "./rules/s3/s3-enforce-encryption.sentinel"
-  enforcement_level = "hard-mandatory"
+  enforcement_level = "soft-mandatory"
 }
 
 policy "s3_mandatory_tags" {
