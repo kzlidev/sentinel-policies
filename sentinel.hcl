@@ -26,5 +26,5 @@ policy "s3_mandatory_tags" {
 
 policy "common_cost_less_than_100" {
   source            = "./rules/common/cost-less-than-100.sentinel"
-  enforcement_level = "soft-mandatory"
+  enforcement_level = "hard-mandatory"
 }
