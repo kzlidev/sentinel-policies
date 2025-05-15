@@ -19,7 +19,7 @@ policy "s3_mandatory_tags" {
   enforcement_level = "soft-mandatory"
 }
 
-policy "common_cost_less_than_100" {
-  source            = "./rules/common/cost-less-than-100.sentinel"
+policy "common_cost_less_than_5" {
+  source            = "./rules/common/cost-less-than-5.sentinel"
   enforcement_level = "soft-mandatory"
 }
